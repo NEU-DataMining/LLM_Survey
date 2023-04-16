@@ -8,7 +8,7 @@
 - 接口: [https://github.com/facebookresearch/llama](https://github.com/facebookresearch/llama)
 
 ### 1.2 Claude
-- 预备应用: Slack，Claude在slack中使用，需要首先注册[slack](www.slack.com)，建议使用gmail注册
+- 预备应用: Slack，Claude在slack中使用，需要首先注册[slack](https://www.slack.com)，建议使用gmail注册
 - 应用申请链接: [https://anthropic.com/claude-in-slack](https://anthropic.com/claude-in-slack)，进入后，点击**add to slack**即可使用
 - 接口申请链接: [https://www.anthropic.com/product](https://www.anthropic.com/product)，点击**request access**，填写表单申请
 
