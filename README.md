@@ -41,6 +41,10 @@
     }
     [];
     ```
+    
+### 2.2 ShareGPT-zh
+- 项目地址: [https://paratranz.cn/projects/6725](https://paratranz.cn/projects/6725)
+
 ## 3. 开放大模型
 
 ### 3.1 Claude
