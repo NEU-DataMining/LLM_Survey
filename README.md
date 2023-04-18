@@ -198,6 +198,10 @@
 ### 2.2 ShareGPT-zh
 - 项目地址: [https://paratranz.cn/projects/6725](https://paratranz.cn/projects/6725)
 
+### 2.3 HC3
+- 文献: [https://arxiv.org/abs/2301.07597](https://arxiv.org/abs/2301.07597)
+- 项目地址: [https://github.com/Hello-SimpleAI/chatgpt-comparison-detection](https://github.com/Hello-SimpleAI/chatgpt-comparison-detection)
+
 ## 3. 开放大模型
 
 ### 3.1 Claude
