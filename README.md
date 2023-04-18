@@ -156,6 +156,10 @@
     main(args)
   ```
 
+### 1.3 Koala
+- 官网: [https://bair.berkeley.edu/blog/2023/04/03/koala/](https://bair.berkeley.edu/blog/2023/04/03/koala/)
+- 权重地址: [https://drive.google.com/drive/folders/10f7wrlAFoPIy-TECHsx9DKIvbQYunCfl?usp=sharing](https://drive.google.com/drive/folders/10f7wrlAFoPIy-TECHsx9DKIvbQYunCfl?usp=sharing)
+
 ## 2. 数据集
 
 ### 2.1 ShareGPT
