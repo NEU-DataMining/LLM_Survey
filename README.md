@@ -155,8 +155,6 @@
     args = parser.parse_args()
     main(args)
   ```
-  
-### 1.3 Koala
 
 ### 1.3 Koala
 - 官网: [https://bair.berkeley.edu/blog/2023/04/03/koala/](https://bair.berkeley.edu/blog/2023/04/03/koala/)
