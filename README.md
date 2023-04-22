@@ -3,25 +3,30 @@
 ## 1. 开源LLM
 
 ### 1.1 LLaMA
+
 - 规模: 7B, 13B, 30B, 65B
 - 申请链接: [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfqNECQnMkycAp2jP4Z9TFX0cGR4uf7b_fBxjY_OjhJILlKGA/viewform)
 - 接口: [https://github.com/facebookresearch/llama](https://github.com/facebookresearch/llama)
 
 ### 1.2 Vicuna
+
 - 规模: 7B, 13B
 - 项目地址: [https://github.com/lm-sys/FastChat](https://github.com/lm-sys/FastChat)
 - 调用:
   先安装必要的包
+
   ```shell
   pip install fschat
   pip install pip3 install git+https://github.com/huggingface/transformers
   ```
+
   运行
   ```shell
   python -m fastchat.serve.cli --model-path /datas/huggingface/vicuna-7b --gpu-nums 8     # 7B版本
   python -m fastchat.serve.cli --model-path /datas/huggingface/vicuna-13b --gpu-nums 8    # 13B版本
   ```
-- 代码调用: 
+- 代码调用:
+
   ```python
   """
   Chat with a model with command line interface.
@@ -157,15 +162,35 @@
   ```
 
 ### 1.3 Koala
+
 - 官网: [https://bair.berkeley.edu/blog/2023/04/03/koala/](https://bair.berkeley.edu/blog/2023/04/03/koala/)
 - 权重地址: [https://drive.google.com/drive/folders/10f7wrlAFoPIy-TECHsx9DKIvbQYunCfl?usp=sharing](https://drive.google.com/drive/folders/10f7wrlAFoPIy-TECHsx9DKIvbQYunCfl?usp=sharing)
+
+### 1.4 Flan-T5
+
++ 规模: small(80M), base(250M), large(780M), xl(3B), xxl(11B)
++ 论文：[https://arxiv.org/pdf/2210.11416.pdf](https://arxiv.org/pdf/2210.11416.pdf)
++ GitHub:  [https://github.com/google-research/t5x](https://github.com/google-research/t5x)
++ HuggingFace:  [https://huggingface.co/docs/transformers/model_doc/t5](https://huggingface.co/docs/transformers/model_doc/t5)
+
+```python
+from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
+model_card = "/datas/huggingface/Flan-T5/flan-t5-small"
+model = AutoModelForSeq2SeqLM.from_pretrained(model_card)
+tokenizer = AutoTokenizer.from_pretrained(model_card)
+
+inputs = tokenizer("A step by step recipe to make bolognese pasta:", return_tensors="pt")
+outputs = model.generate(**inputs)
+print(tokenizer.batch_decode(outputs, skip_special_tokens=True))
+```
 
 ## 2. 数据集
 
 ### 2.1 ShareGPT
+
 - 官网: [https://sharegpt.com/](https://sharegpt.com/)
 - 项目链接: [https://github.com/domeccleston/sharegpt](https://github.com/domeccleston/sharegpt)
-- 接口: 
+- 接口:
   - 添加新记录
     ```python
     const res = await fetch("https://sharegpt.com/api/conversations", {
@@ -194,17 +219,20 @@
     }
     [];
     ```
-    
+
 ### 2.2 ShareGPT-zh
+
 - 项目地址: [https://paratranz.cn/projects/6725](https://paratranz.cn/projects/6725)
 
 ### 2.3 HC3
+
 - 文献: [https://arxiv.org/abs/2301.07597](https://arxiv.org/abs/2301.07597)
 - 项目地址: [https://github.com/Hello-SimpleAI/chatgpt-comparison-detection](https://github.com/Hello-SimpleAI/chatgpt-comparison-detection)
 
 ## 3. 开放大模型
 
 ### 3.1 Claude
+
 - 预备应用: Slack，Claude在slack中使用，需要首先注册[slack](https://www.slack.com)，建议使用gmail注册
 - 应用申请链接: [https://anthropic.com/claude-in-slack](https://anthropic.com/claude-in-slack)，进入后，点击**add to slack**即可使用
 - 接口申请链接: [https://www.anthropic.com/product](https://www.anthropic.com/product)，点击**request access**，填写表单申请
